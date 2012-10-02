@@ -11,9 +11,9 @@ open Ast
 
 (* escape XML chars *)
 let escape_string str : string =
+    let str = Str.global_replace (Str.regexp "&") "&amp;" str in
     let str = Str.global_replace (Str.regexp "<") "&lt;" str in
     let str = Str.global_replace (Str.regexp ">") "&gt;" str in
-    let str = Str.global_replace (Str.regexp "&") "&amp;" str in
     let str = Str.global_replace (Str.regexp "'") "&apos;" str in
     let str = Str.global_replace (Str.regexp "\"") "&quot;" str in
     str
