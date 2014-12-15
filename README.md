@@ -1,6 +1,7 @@
-# About
+# xml of ocaml
 
 This program and library pretty-prints the abstract syntax tree (AST) of an OCaml program as XML.
+It is used by the [Ocaml semantics](https://github.com/davidlazar/ocaml-semantics) project.
 
 # Example
 
@@ -39,9 +40,3 @@ This program and library pretty-prints the abstract syntax tree (AST) of an OCam
         </ExApp>
       </ExLet>
     </StExp>
-
-# Contributing
-
-This project is available on [GitHub](https://github.com/davidlazar/xml_of_ocaml) and [Bitbucket](https://bitbucket.org/davidlazar/xml_of_ocaml/). You may contribute changes using either.
-
-Please report bugs and feature requests using the [GitHub issue tracker](https://github.com/davidlazar/xml_of_ocaml/issues).
